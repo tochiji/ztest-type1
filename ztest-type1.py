@@ -22,8 +22,8 @@ n1,p1,n2,p2 = map(float, sys.argv[1:])
 p = ((n1*p1) + (n2*p2))/(n1+n2)
 
 # n数が30以上か？
-# if (n1 < 30) or (n2 < 30):
-# error_usage()
+if (n1 < 30) or (n2 < 30):
+    error_usage()
 
 # 比率は0から1の間か？
 if not (0 <= p1 <= 1) or not (0 <= p2 <= 1):
